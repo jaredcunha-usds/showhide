@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Show/Hide Fun Stuff</title>
+  <meta name="description" content="[PAGE DESCRIPTION HERE]">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+		.box {
+			height: 0;
+			overflow: hidden;
+			background: #f2f2f2;
+		}
+		.box.enabled {
+			height: 500px;
+		}
+  </style>
+
+</head>
+<body>
+
+	<h1>Show/Hide</h1>
+
+	<button type="button" data-toggle-button="cool-content">toggle content</button>
+
+	<div class="box" data-toggle-content="cool-content">
+		<p>
+			This is my content
+		</p>
+	</div>
+
+	<p><a href="https://github.com/jaredcunha/showhide">View on GitHub</a></p>
+
+
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="showhide.js"></script>
+    
+</body>
+</html>
